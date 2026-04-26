@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INK & IRON | Premium Tattoo Studio</title>
+    <!-- cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- navbar section  -->
+    <nav class="navbar">
+        <!-- logo navbar -->
+        <div class="logo" onclick="window.scrollTo(0,0)">INK<span>&</span>IRON</div>
+        <!-- navbar lonks -->
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#artists">Artists</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#admin">Admin</a></li>
+        </ul>
+
+        <!-- menu  -->
+        <div class="menu-toggle" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- links section -->
+    <div class="overlay" id="overlay"></div>
+    <div class="sidebar" id="sidebar">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#artists">Artists</a>
+        <a href="#booking">Booking</a>
+        <a href="#admin">Admin</a>
+    </div>
+
+
+    <!-- main visual section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Wear Your Soul</h1>
+            <p style="color: var(--text-dim); letter-spacing: 2px;">PREMIUM TATTOOING & ARTISTRY</p>
+        </div>
+    </section>
+
+
+    <!-- gallery section -->
+    <section id="gallery" class="container">
+        <h2 class="section-title">Design Portfolio</h2>
+        <div class="premium-gallery">
+            <div class="gallery-card">
+                <img src="img 01 tattoo.jpg" alt="Art">
+                <div class="gallery-overlay">
+                    <span class="tag">Demon Slayer</span>
+                    <p>Anime Character name is Nezuko </p>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="img 02 tattoo.webp" alt="Art">
+                <div class="gallery-overlay">
+                    <span class="tag">Naruto</span>
+                    <p>Anime Character name is itachi uchiha</p>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="one pice.jpg" alt="Art">
+                <div class="gallery-overlay">
+                    <span class="tag">One Piece</span>
+                    <p>Anime Character name is Luffy</p>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="gojo.jpg" alt="Art">
+                <div class="gallery-overlay">
+                    <span class="tag">Jujutsu kaisen</span>
+                    <p>Anime Character name is Gojo Satoru</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- artists section -->
+
+    <section id="artists" class="container">
+        <h2 class="section-title">Master Artists</h2>
+        <div class="artist-grid" id="artistBox"></div>
+    </section>
+
+
+
+
+
+
+    <!-- booking section  -->
+
+    <section id="booking" class="container">
+        <div class="booking-wrapper">
+            <h2 class="section-title">Book Session</h2>
+            <form id="bookingForm">
+                <div class="form-row">
+                    <input type="text" id="cName" placeholder="Name" required>
+                    <input type="email" id="cEmail" placeholder="Email" required>
+                </div>
+                <select id="aSelect"></select>
+                <textarea id="aIdea" placeholder="Idea description..."></textarea>
+                <button type="submit" class="primary-btn" style="width:100%">Request</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- admin section to conform or not  -->
+
+    <section id="admin" class="container">
+        <h2 class="section-title">Admin Dashboard</h2>
+        <div class="admin-box">
+            <table>
+                <thead><tr><th>Client</th><th>Artist</th><th>Status</th></tr></thead>
+                <tbody id="adminTable"></tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+    <!-- script section -->
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
